@@ -62,12 +62,10 @@
 
     date_default_timezone_set('America/Montreal');
     $dateMont = date('h');
-    echo $dateMont . "<br>";
     date_default_timezone_set('Europe/Paris');
     $dateFr = date('h');
-    echo $dateFr . "<br>";
 
-    echo "Il y a " . ($dateMont - $dateFr) . " de décalage";
+    echo "Il y a " . ($dateMont - $dateFr) . " heures de décalage";
 
     function days_until_next_birthday($month, $day)
     {
